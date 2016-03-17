@@ -40,6 +40,7 @@ def main():
     db.close()
     print len(notFound)
     print notFound
+    
 def getArtNo(issn):
     url = 'http://www.scimagojr.com/journalsearch.php?q=' + issn + '&tip=iss'
     page = urllib2.urlopen(url)
